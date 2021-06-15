@@ -1,6 +1,6 @@
 package animals;
 
-abstract class Animal {
+abstract class Animal implements ICollisionable {
     Race race;
     String name;
     private int[] position = {0,0};
@@ -27,6 +27,6 @@ abstract class Animal {
 
     @Override
     public String toString() {
-        return this.name + " is " + this.race + ", position: " + this.position[0] + ", " + this.position[1];
+        return this.race + " " + this.name;
     }
 }
